@@ -2,15 +2,21 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #ff5a5f;
-  padding: 20px;
+  background-image: url("https://images.unsplash.com/photo-1580860749755-f49eb5509d55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  text-align: center;
 }
 
 header h1 {
   color: #fff;
+  font-size: 36px;
   margin: 0;
 }
 
@@ -19,7 +25,11 @@ section {
 }
 
 h2 {
+  color: #ff5a5f;
+  font-size: 24px;
+  margin-bottom: 30px;
   margin-top: 0;
+  text-align: center;
 }
 
 #bookCallBtn {
@@ -31,14 +41,102 @@ h2 {
   font-size: 16px;
   padding: 10px 20px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
-.benefit,
-.useCase {
+#benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit {
   background-color: #f2f2f2;
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.benefit-icon {
+  color: #ff5a5f;
+  font-size: 48px;
+  margin-right: 20px; /* Restore the margin for the benefits icons */
+}
+
+.useCase {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this line to align the icon and the text */
+  width: 100%;
+  max-width: 250px; /* Add this line to set a maximum width for the use cases */
+  height: 140px; /* Adjust the height to 40% of the current height */
+  margin-bottom: 30px;
+}
+
+.useCase-icon {
+  color: #ff5a5f;
+  font-size: 48px;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Add this line to add space to the right of the icons */
+}
+
+#useCases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.useCase-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.useCase h3 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left; /* Align the title to the left */
+}
+
+.useCase p {
+  text-align: left; /* Align the text to the left */
+}
+
+.useCase-icon {
+  color: #ff5a5f;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#intro {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+#intro h2 {
+  margin-bottom: 20px;
+}
+
+#intro p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
 }
 
 footer {
@@ -55,4 +153,32 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+#testimonials {
+  text-align: center;
+  padding: 40px;
+}
+
+.testimonial-container {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  height: 80px;
+  margin: 0 auto 20px;
+  width: 80px;
+}
+
+.testimonial h3 {
+  margin: 0 0 10px;
 }
